@@ -1,55 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-
+const express = require("express");
 const app = express();
 const port = 3000;
-
-app.use(cors());
-app.use(express.json());
-
-// Dummy tracking data
-const trackingData = {
-  'HSD123456': {
-    status: 'In Transit',
-    location: 'Sorting Facility, NY',
-    estimatedDelivery: 'Tomorrow by 8:00 PM',
-    history: [
-      { date: '2026-06-03 14:00', event: 'Package departed facility', location: 'Chicago, IL' },
-      { date: '2026-06-02 09:30', event: 'Package received by carrier', location: 'Chicago, IL' },
-    ]
-  },
-  'HSD987654': {
-    status: 'Delivered',
-    location: 'Front Porch',
-    estimatedDelivery: 'Delivered',
-    history: [
-      { date: '2026-06-04 10:15', event: 'Delivered', location: 'Los Angeles, CA' },
-      { date: '2026-06-04 07:00', event: 'Out for delivery', location: 'Los Angeles, CA' },
-      { date: '2026-06-03 22:00', event: 'Arrived at local facility', location: 'Los Angeles, CA' },
-    ]
-  }
-};
-
-app.get('/api/track/:id', (req, res) => {
-  const { id } = req.params;
-  const data = trackingData[id.toUpperCase()];
-  
-  if (data) {
-    res.json({ success: true, trackingNumber: id.toUpperCase(), ...data });
-  } else {
-    // Generate random plausible data for unknown tracking numbers
-    res.json({
-      success: true,
-      trackingNumber: id.toUpperCase(),
-      status: 'Processing',
-      location: 'Origin Facility',
-      estimatedDelivery: 'Pending Update',
-      history: [
-        { date: new Date().toISOString().slice(0, 16).replace('T', ' '), event: 'Label created', location: 'Sender Facility' }
-      ]
-    });
-  }
-});
 
 app.listen(port, () => {
   console.log(`HSD Backend listening on port ${port}`);
