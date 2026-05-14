@@ -31,6 +31,9 @@ const trackingData = {
 app.get("/api/track/:id", (req, res) => {
   const { id } = req.params;
   const data = trackingData[id.toUpperCase()];
+  if (data) {
+    res.json({ success: true, trackingNumber: id.toUpperCase(), ...data });
+  }
 });
 
 app.listen(port, () => {
