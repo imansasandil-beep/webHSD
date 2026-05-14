@@ -12,7 +12,10 @@ const trackingData = {
     status: "In Transit",
     location: "Sorting Facility, NY",
     estimatedDelivery: "Tomorrow by 8:00 PM",
-    history: []
+    history: [
+      { date: "2026-06-03 14:00", event: "Package departed facility", location: "Chicago, IL" },
+      { date: "2026-06-02 09:30", event: "Package received by carrier", location: "Chicago, IL" }
+    ]
   }
 };
 
