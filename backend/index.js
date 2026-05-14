@@ -33,6 +33,8 @@ app.get("/api/track/:id", (req, res) => {
   const data = trackingData[id.toUpperCase()];
   if (data) {
     res.json({ success: true, trackingNumber: id.toUpperCase(), ...data });
+  } else {
+    res.json({ success: true, trackingNumber: id.toUpperCase(), status: "Processing", location: "Origin Facility", estimatedDelivery: "Pending Update", history: [{ date: new Date().toISOString().slice(0, 16).replace("T", " "), event: "Label created", location: "Sender Facility" }] });
   }
 });
 
