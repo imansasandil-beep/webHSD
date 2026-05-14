@@ -16,6 +16,15 @@ const trackingData = {
       { date: "2026-06-03 14:00", event: "Package departed facility", location: "Chicago, IL" },
       { date: "2026-06-02 09:30", event: "Package received by carrier", location: "Chicago, IL" }
     ]
+  },
+  "HSD987654": {
+    status: "Delivered",
+    location: "Front Porch",
+    estimatedDelivery: "Delivered",
+    history: [
+      { date: "2026-06-04 10:15", event: "Delivered", location: "Los Angeles, CA" },
+      { date: "2026-06-04 07:00", event: "Out for delivery", location: "Los Angeles, CA" }
+    ]
   }
 };
 
