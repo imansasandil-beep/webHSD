@@ -28,6 +28,11 @@ const trackingData = {
   }
 };
 
+app.get("/api/track/:id", (req, res) => {
+  const { id } = req.params;
+  const data = trackingData[id.toUpperCase()];
+});
+
 app.listen(port, () => {
   console.log(`HSD Backend listening on port ${port}`);
 });
