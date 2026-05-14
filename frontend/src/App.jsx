@@ -7,7 +7,13 @@ function App() {
   const [error, setError] = useState(null)
   return (
     <div className="container">
-      Hello World
+      <nav>
+        <a href="/" className="logo">HSD<span>.</span></a>
+        <div className="nav-links">
+          <a href="#">Services</a>
+        </div>
+      </nav>
+      <main className="hero"></main>
     </div>
   )
 }
