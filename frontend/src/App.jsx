@@ -18,6 +18,9 @@ function App() {
       <main className="hero">
         <h1>High Speed Delivery</h1>
         <p>Global logistics and package tracking made simple, transparent, and ultra-fast.</p>
+        <div className="glass-panel">
+          <h2>Track your package</h2>
+        </div>
       </main>
     </div>
   )
