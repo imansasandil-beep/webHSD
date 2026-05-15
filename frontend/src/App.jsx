@@ -20,6 +20,10 @@ function App() {
         <p>Global logistics and package tracking made simple, transparent, and ultra-fast.</p>
         <div className="glass-panel">
           <h2>Track your package</h2>
+          <form className="tracking-form">
+            <input type="text" placeholder="Enter tracking number" />
+            <button type="submit">Track</button>
+          </form>
         </div>
       </main>
     </div>
