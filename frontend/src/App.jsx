@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
       <nav>
-        <a href="/" className="logo">HSD<span>.</span></a>
+        <a href="/" className="logo">HSD<span style={{color: "var(--primary-color)"}}>.</span></a>
         <div className="nav-links">
           <a href="#">Services</a>
         </div>
