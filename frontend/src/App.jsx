@@ -21,7 +21,7 @@ function App() {
         <div className="glass-panel">
           <h2>Track your package</h2>
           <form className="tracking-form">
-            <input type="text" placeholder="Enter tracking number" />
+            <input type="text" placeholder="Enter your tracking number (e.g. HSD123456)" />
             <button type="submit">Track</button>
           </form>
         </div>
