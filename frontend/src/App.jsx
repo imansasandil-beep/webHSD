@@ -17,7 +17,7 @@ function App() {
       </nav>
       <main className="hero">
         <h1>High Speed Delivery</h1>
-        <p>Global logistics and package tracking made simple.</p>
+        <p>Global logistics and package tracking made simple, transparent, and ultra-fast.</p>
       </main>
     </div>
   )
