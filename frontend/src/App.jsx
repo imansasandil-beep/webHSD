@@ -11,6 +11,8 @@ function App() {
         <a href="/" className="logo">HSD<span style={{color: "var(--primary-color)"}}>.</span></a>
         <div className="nav-links">
           <a href="#">Services</a>
+          <a href="#">Locations</a>
+          <a href="#">Support</a>
         </div>
       </nav>
       <main className="hero"></main>
