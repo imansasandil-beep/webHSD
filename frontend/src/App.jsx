@@ -23,6 +23,9 @@ function App() {
           const handleTrack = async (e) => {
     e.preventDefault()
     if (!trackingNumber.trim()) return
+    setLoading(true)
+    setError(null)
+    setLoading(false)
   }
 
   return (
