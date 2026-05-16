@@ -25,7 +25,16 @@ function App() {
     if (!trackingNumber.trim()) return
     setLoading(true)
     setError(null)
-    setLoading(false)
+    try {
+      const response = await fetch(`http://localhost:3000/api/track/${trackingNumber}`)
+      const data = await response.json()
+      if (data.success) setResult(data)
+      else setError("Not found")
+    } catch (err) {
+      setError("Failed")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
