@@ -53,6 +53,8 @@ function App() {
             <div className="tracking-result">
               <div className="status-badge">{result.status}</div>
               <h3>Tracking: {result.trackingNumber}</h3>
+              <p>Current Location: <strong style={{color: "white"}}>{result.location}</strong></p>
+              <p>Estimated Delivery: <strong style={{color: "white"}}>{result.estimatedDelivery}</strong></p>
             </div>
           )}
         </div>
