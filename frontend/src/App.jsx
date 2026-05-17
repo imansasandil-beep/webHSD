@@ -42,7 +42,9 @@ function App() {
             <input type="text" value={trackingNumber}
               onChange={(e) => setTrackingNumber(e.target.value)}
               placeholder="Enter your tracking number (e.g. HSD123456)" />
-            <button type="submit">Track</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Searching..." : "Track"}
+            </button>
           </form>
         </div>
       </main>
