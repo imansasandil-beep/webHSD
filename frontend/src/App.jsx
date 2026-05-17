@@ -31,7 +31,7 @@ function App() {
       if (data.success) setResult(data)
       else setError("Not found")
     } catch (err) {
-      setError("Failed")
+      setError("Failed to connect to the server. Please try again later.")
     } finally {
       setLoading(false)
     }
