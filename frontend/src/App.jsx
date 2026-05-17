@@ -48,6 +48,13 @@ function App() {
           </form>
 
           {error && <p style={{color: "#ef4444", marginTop: "1rem"}}>{error}</p>}
+
+          {result && (
+            <div className="tracking-result">
+              <div className="status-badge">{result.status}</div>
+              <h3>Tracking: {result.trackingNumber}</h3>
+            </div>
+          )}
         </div>
       </main>
     </div>
