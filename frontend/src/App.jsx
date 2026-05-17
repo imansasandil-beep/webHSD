@@ -46,6 +46,8 @@ function App() {
               {loading ? "Searching..." : "Track"}
             </button>
           </form>
+
+          {error && <p style={{color: "#ef4444", marginTop: "1rem"}}>{error}</p>}
         </div>
       </main>
     </div>
