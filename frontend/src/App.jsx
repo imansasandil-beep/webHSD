@@ -39,7 +39,9 @@ function App() {
 
   return (
     <div className="container">
-            <input type="text" placeholder="Enter your tracking number (e.g. HSD123456)" />
+            <input type="text" value={trackingNumber}
+              onChange={(e) => setTrackingNumber(e.target.value)}
+              placeholder="Enter your tracking number (e.g. HSD123456)" />
             <button type="submit">Track</button>
           </form>
         </div>
