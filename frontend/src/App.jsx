@@ -55,6 +55,16 @@ function App() {
               <h3>Tracking: {result.trackingNumber}</h3>
               <p>Current Location: <strong style={{color: "white"}}>{result.location}</strong></p>
               <p>Estimated Delivery: <strong style={{color: "white"}}>{result.estimatedDelivery}</strong></p>
+
+              <div className="timeline">
+                {result.history.map((item, index) => (
+                  <div className="timeline-item" key={index}>
+                    <div className="timeline-date">{item.date}</div>
+                    <div className="timeline-event">{item.event}</div>
+                    <div className="timeline-location">{item.location}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>
