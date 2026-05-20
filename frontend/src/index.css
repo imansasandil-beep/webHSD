@@ -2,4 +2,7 @@
   --primary-color: #3b82f6;
   --primary-dark: #2563eb;
   --secondary-color: #10b981;
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
