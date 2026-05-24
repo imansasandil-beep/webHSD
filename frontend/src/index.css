@@ -80,3 +80,16 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
