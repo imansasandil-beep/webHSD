@@ -111,3 +111,13 @@ button {
   transition: all 0.3s ease;
   font-family: inherit;
 }
+
+button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
