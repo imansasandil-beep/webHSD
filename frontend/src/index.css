@@ -138,3 +138,14 @@ button:active {
   color: #34d399;
   margin-bottom: 1.5rem;
 }
+
+.timeline {
+  margin-top: 2rem;
+  border-left: 2px solid var(--glass-border);
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
