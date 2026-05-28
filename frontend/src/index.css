@@ -186,3 +186,11 @@ nav {
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--glass-border);
 }
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
