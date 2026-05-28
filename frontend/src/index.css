@@ -177,3 +177,12 @@ button:active {
   font-size: 0.9rem;
   color: #cbd5e1;
 }
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
