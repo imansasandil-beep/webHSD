@@ -121,3 +121,20 @@ button:hover {
 button:active {
   transform: translateY(0);
 }
+
+/* Tracking Result Card */
+.tracking-result {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  margin-bottom: 1.5rem;
+}
