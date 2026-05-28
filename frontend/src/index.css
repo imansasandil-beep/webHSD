@@ -149,3 +149,15 @@ button:active {
   position: relative;
   padding-bottom: 2rem;
 }
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.35rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 3px solid #1e1b4b;
+}
